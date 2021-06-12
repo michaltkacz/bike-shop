@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# IT-NDER v3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Demo website project for students looking for IT projects teammates.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [IT-NDER v3](#it-nder-v3)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Demo](#demo)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup and run](#setup-and-run)
+  - [Features](#features)
+  - [Issues](#issues)
+  - [Status](#status)
+  - [Contact](#contact)
 
-### `npm start`
+## General info
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+todo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Demo
 
-### `npm test`
+todo...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Project is available online on Github Pages [here](https://michaltkacz.github.io/it-nder/). -->
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+todo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- ![Example screenshot1](./images/image1.png) -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+todo...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- - HTML / CSS / JS
+- [React Bootstrap v1.5.2](https://react-bootstrap.github.io/ 'React Bootstrap page') front-end library.
+- [Bootstrap v5.0.0](https://getbootstrap.com/ 'Bootstrap page') front-end toolkit.
+- [react-bootstrap-typeahead v5.1.4](https://github.com/ericgio/react-bootstrap-typeahead 'react-bootstrap-typeahead page') library.
+- [Firebase](https://firebase.google.com/) service as backend for authorization and database. -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup and run
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+todo...
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- To run it locally, download the repository and run `npm install` in project root folder. Then launch `npm start` to start project on local server. -->
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+todo...
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Issues
 
-### Code Splitting
+todo...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Status
 
-### Analyzing the Bundle Size
+todo...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created by [@michaltkacz](https://github.com/michaltkacz) - feel free to contact me!
