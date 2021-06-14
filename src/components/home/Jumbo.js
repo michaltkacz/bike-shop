@@ -7,7 +7,6 @@ import { StyleSheet, css } from 'aphrodite';
 const styles = (props) =>
   StyleSheet.create({
     jumbo: {
-      cursor: 'pointer',
       paddingTop: '10rem',
       paddingBottom: '3rem',
       borderRadius: 0,
@@ -19,8 +18,15 @@ const styles = (props) =>
         '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
 
       ':hover': {
-        transform: 'scale(1.02, 1.02)',
         boxShadow: '0 0px 8px 0 #B18AFF, 0 0px 8px 0 #B18AFF',
+      },
+    },
+
+    jumboClick: {
+      cursor: 'pointer',
+
+      ':hover': {
+        transform: 'scale(1.02, 1.02)',
       },
     },
 
@@ -42,8 +48,11 @@ const Jumbo = ({ title, subtitle, img, onClick }) => {
   return (
     <Jumbotron
       fluid
-      className={css(styles({ img }).jumbo)}
-      onClick={() => onClick()}
+      className={css(
+        styles({ img }).jumbo,
+        onClick && styles({ img }).jumboClick
+      )}
+      onClick={onClick ? () => onClick() : null}
     >
       <div className={css(styles({ img }).overlay)}>
         <h2 className={css(styles({ img }).title)}>{title}</h2>

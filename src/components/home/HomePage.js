@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { Container, Jumbotron, Button, Row, Col } from 'react-bootstrap';
-
-import { StyleSheet, css } from 'aphrodite';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import { useHistory } from 'react-router-dom';
 
@@ -13,32 +11,22 @@ import img4 from '../../assets/4.jpg';
 
 import Jumbo from './Jumbo';
 
-const styles = StyleSheet.create({
-  header: {
-    borderBottom: '1px solid black',
-  },
-  brandName: {
-    fontFamily: `'Do Hyeon', sans-serif`,
-  },
-});
-
 const HomePage = () => {
   const history = useHistory();
 
   return (
     <Container
       fluid='xl'
-      className='py-1'
+      className='py-3'
       style={{ minHeight: 'calc(100vh - 56px)' }}
     >
       <Row>
         <Col>
-          <h1 className={css(styles.header)}>
-            Welcome to the{' '}
-            <span className={css(styles.brandName)}>
-              <nobr>Bike-Shop!</nobr>
-            </span>
-          </h1>
+          <Jumbo
+            img={img1}
+            title='Welcome to the Bike-Shop!'
+            subtitle='Complete bikes / Custom shop / Sportswear / Tools / Accessories / Parts'
+          />
         </Col>
       </Row>
       <Row>
@@ -46,15 +34,15 @@ const HomePage = () => {
           <Jumbo
             img={img1}
             title='Bikes'
-            subtitle='Complete bikes, off-the-shelf '
+            subtitle='Complete bikes, off-the-shelf'
             onClick={() => history.push('/browse')}
           />
         </Col>
         <Col lg={5}>
           <Jumbo
             img={img2}
-            title='Sportwear'
-            subtitle='For men and women'
+            title='Sportswear'
+            subtitle='For men, women and kids'
             onClick={() => history.push('/browse')}
           />
         </Col>
@@ -63,16 +51,16 @@ const HomePage = () => {
         <Col lg={5}>
           <Jumbo
             img={img3}
-            title='Parts and accessories'
-            subtitle='Everything you need for your bike'
+            title='Parts, tools, accessories'
+            subtitle='Essenstials '
             onClick={() => history.push('/browse')}
           />
         </Col>
         <Col lg={7}>
           <Jumbo
             img={img4}
-            title='Bike builder'
-            subtitle='Build your dream bike'
+            title='Custom shop'
+            subtitle='Build your dream machine'
             onClick={() => history.push('/bike-builder')}
           />
         </Col>

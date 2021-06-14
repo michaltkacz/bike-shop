@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 
 import { Form, Button, Card, Alert } from 'react-bootstrap';
 
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -35,7 +35,7 @@ const Register = () => {
   };
 
   return (
-    <Card>
+    <Card border='primary' className='rounded-0'>
       <Card.Body>
         <h2 className='mb-4'>New user - Sing Up</h2>
         {error && <Alert variant='danger'>{error}</Alert>}
@@ -52,7 +52,7 @@ const Register = () => {
             <Form.Label>Password Confirmation</Form.Label>
             <Form.Control type='password' ref={passwordConfirmRef} required />
           </Form.Group>
-          <Button disabled={loading} className='w-100' type='submit'>
+          <Button disabled={loading} className='w-100 rounded-0' type='submit'>
             Sign Up
           </Button>
         </Form>

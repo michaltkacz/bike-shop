@@ -1,11 +1,6 @@
 import { React } from 'react';
 
-import {
-  Redirect,
-  Route,
-  BrowserRouter as Router,
-  Switch,
-} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import { AuthProvider } from '../contexts/AuthContext';
 import '../styles/App.scss';
@@ -25,17 +20,13 @@ const App = () => {
         <Switch>
           <div>
             <NavBar />
-            <Route exact path='/home' render={() => <HomePage />} />
-            <Route exact path='/login' render={() => <LoginPage />} />
-            <Route exact path='/browse' render={() => <BrowsePage />} />
-            <Route
-              exact
-              path='/bike-builder'
-              render={() => <BikeBuilderPage />}
-            />
-            <Route path='*'>
-              <Redirect push to='/home' />
-            </Route>
+            <Route path='/home' render={() => <HomePage />} />
+            <Route path='/login' render={() => <LoginPage />} />
+            <Route path='/browse' render={() => <BrowsePage />} />
+            <Route path='/bike-builder' render={() => <BikeBuilderPage />} />
+            {/* <Route path='*'>
+              <Redirect to='/home' />
+            </Route> */}
             <FooterBar />
           </div>
         </Switch>

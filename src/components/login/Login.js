@@ -30,7 +30,7 @@ const Login = () => {
   };
 
   return (
-    <Card>
+    <Card border='primary' className='rounded-0'>
       <Card.Body>
         <h2 className='mb-4'>Already a member - Sign In</h2>
         {error && <Alert variant='danger'>{error}</Alert>}
@@ -44,13 +44,13 @@ const Login = () => {
             <Form.Control type='password' ref={passwordRef} required />
           </Form.Group>
 
-          <Button disabled={loading} className='w-100' type='submit'>
+          <Button disabled={loading} className='w-100 rounded-0' type='submit'>
             Sign In
           </Button>
         </Form>
       </Card.Body>
       <Card.Footer>
-        <Button variant='link'>Forgot password?</Button>
+        <Button variant='link text-info'>Forgot password?</Button>
       </Card.Footer>
     </Card>
   );

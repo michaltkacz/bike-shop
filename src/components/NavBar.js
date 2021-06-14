@@ -1,3 +1,5 @@
+import { IoPersonCircleOutline, IoCartOutline } from 'react-icons/io5';
+
 import React from 'react';
 
 import { Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap';
@@ -61,12 +63,22 @@ const NavBar = () => {
         <Nav className='w-100 justify-content-end'>
           {currentUser ? (
             <>
-              {/* <NavItem eventkey={1}>
-                <Nav.Link as={Link} to='/browse'>
-                  browse notices
+              <NavItem eventkey={1}>
+                <Nav.Link as={Link} to='/cart'>
+                  <IoCartOutline size='1.5rem' />
+                  <span className='text-secondary '>Cart</span>
                 </Nav.Link>
-              </NavItem> */}
-              <NavDropdown title={<strong>{currentUser?.email}</strong>}>
+              </NavItem>
+              <NavDropdown
+                title={
+                  <>
+                    <IoPersonCircleOutline size='1.5rem' />
+                    <span className='text-secondary font-weight-bold'>
+                      {currentUser?.email}
+                    </span>
+                  </>
+                }
+              >
                 <NavDropdown.Item onClick={handleLogout}>
                   Logout
                 </NavDropdown.Item>
