@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/bike-shop/static/css/main.41a36f22.chunk.css",
+    "main.js": "/bike-shop/static/js/main.d6b1198a.chunk.js",
+    "main.js.map": "/bike-shop/static/js/main.d6b1198a.chunk.js.map",
+    "runtime-main.js": "/bike-shop/static/js/runtime-main.0d2f80cc.js",
+    "runtime-main.js.map": "/bike-shop/static/js/runtime-main.0d2f80cc.js.map",
+    "static/js/2.9f5d1d5d.chunk.js": "/bike-shop/static/js/2.9f5d1d5d.chunk.js",
+    "static/js/2.9f5d1d5d.chunk.js.map": "/bike-shop/static/js/2.9f5d1d5d.chunk.js.map",
+    "index.html": "/bike-shop/index.html",
+    "static/css/main.41a36f22.chunk.css.map": "/bike-shop/static/css/main.41a36f22.chunk.css.map",
+    "static/js/2.9f5d1d5d.chunk.js.LICENSE.txt": "/bike-shop/static/js/2.9f5d1d5d.chunk.js.LICENSE.txt",
+    "static/media/1.e7cc52a1.jpg": "/bike-shop/static/media/1.e7cc52a1.jpg",
+    "static/media/2.f685d3b3.jpg": "/bike-shop/static/media/2.f685d3b3.jpg",
+    "static/media/3.a7541e95.jpg": "/bike-shop/static/media/3.a7541e95.jpg",
+    "static/media/4.4eb28422.jpg": "/bike-shop/static/media/4.4eb28422.jpg",
+    "static/media/5.dfb5e540.jpg": "/bike-shop/static/media/5.dfb5e540.jpg",
+    "static/media/6.71607bf2.jpg": "/bike-shop/static/media/6.71607bf2.jpg",
+    "static/media/7.06aab400.jpg": "/bike-shop/static/media/7.06aab400.jpg",
+    "static/media/icon.734f867f.svg": "/bike-shop/static/media/icon.734f867f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d2f80cc.js",
+    "static/js/2.9f5d1d5d.chunk.js",
+    "static/css/main.41a36f22.chunk.css",
+    "static/js/main.d6b1198a.chunk.js"
+  ]
+}
