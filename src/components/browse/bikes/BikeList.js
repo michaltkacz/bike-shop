@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+
+import { Container, Row, Col, Alert } from 'react-bootstrap';
+
+import { database } from '../../../firebase/firebase';
+
 import Bike from './Bike';
-import { Container, Row, Col } from 'react-bootstrap';
-import { database } from '../../firebase/firebase';
 
 const BikeList = () => {
   const [bikes, setBikes] = useState([]);
@@ -26,7 +29,6 @@ const BikeList = () => {
         }
         i += 2;
       }
-      console.log(groupedBikes);
       setBikes(groupedBikes);
     });
   };
@@ -37,19 +39,25 @@ const BikeList = () => {
 
   return (
     <Container fluid className='mb-3'>
-      {bikes.map((bikeGroup, index) => {
-        return (
-          <Row key={`bike-group-${index}`}>
-            {bikeGroup.map((bike) => {
-              return (
-                <Col key={bike.id} xl={6} className='mt-3'>
-                  <Bike data={bike} />
-                </Col>
-              );
-            })}
-          </Row>
-        );
-      })}
+      {bikes.length === 0 ? (
+        <Alert variant='primary' className='rounded-0 my-3 text-center'>
+          Currently no bikes available
+        </Alert>
+      ) : (
+        bikes.map((bikeGroup, index) => {
+          return (
+            <Row key={`bike-group-${index}`}>
+              {bikeGroup.map((bike) => {
+                return (
+                  <Col key={bike.id} xl={6} className='mt-3 px-0 px-md-3'>
+                    <Bike data={bike} />
+                  </Col>
+                );
+              })}
+            </Row>
+          );
+        })
+      )}
     </Container>
   );
 };

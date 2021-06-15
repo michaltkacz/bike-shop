@@ -16,7 +16,6 @@ const styles = (props) =>
       backgroundRepat: 'no-repeat',
       boxShadow:
         '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-
       ':hover': {
         boxShadow: '0 0px 8px 0 #B18AFF, 0 0px 8px 0 #B18AFF',
       },
@@ -24,20 +23,12 @@ const styles = (props) =>
 
     jumboClick: {
       cursor: 'pointer',
-
+      transition: 'transform 330ms ease-in-out',
       ':hover': {
         transform: 'scale(1.02, 1.02)',
       },
     },
 
-    title: {
-      color: '#B18AFF',
-      fontWeight: 'bold',
-    },
-    subtitle: {
-      color: 'white',
-      fontStyle: 'italic',
-    },
     overlay: {
       padding: '1rem',
       background: 'rgba(0,0,0,0.7)',
@@ -55,8 +46,8 @@ const Jumbo = ({ title, subtitle, img, onClick }) => {
       onClick={onClick ? () => onClick() : null}
     >
       <div className={css(styles({ img }).overlay)}>
-        <h2 className={css(styles({ img }).title)}>{title}</h2>
-        <p className={css(styles({ img }).subtitle)}>{subtitle}</p>
+        <p className='display-4 text-secondary font-weight-italic'>{title}</p>
+        <p className='text-white font-italic'>{subtitle}</p>
       </div>
     </Jumbotron>
   );

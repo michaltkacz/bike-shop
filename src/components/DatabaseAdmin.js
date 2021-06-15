@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { database } from '../firebase/firebase';
 import bikes from '../firebase/databaseDraft';
 
-const DatabasePush = () => {
+const DatabaseAdmin = () => {
   const pushData = () => {
     console.log(bikes);
     const bikesRef = database.ref('bikes');
@@ -33,7 +33,7 @@ const DatabasePush = () => {
         className='text-muted'
         onClick={() => pushData()}
       >
-        Push default database
+        (Debug) DB_push_log
       </Button>
       <Button
         variant='link'
@@ -41,10 +41,10 @@ const DatabasePush = () => {
         className='text-muted'
         onClick={() => getData()}
       >
-        Get current database
+        (Debug) DB_get_log
       </Button>
     </>
   );
 };
 
-export default DatabasePush;
+export default DatabaseAdmin;

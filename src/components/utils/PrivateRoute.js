@@ -6,9 +6,23 @@ import { useAuth } from '../../contexts/AuthContext';
 
 const PrivateRoute = ({ children, ...rest }) => {
   const { currentUser } = useAuth();
-
+  console.log();
   return (
-    <Route {...rest}>{currentUser ? children : <Redirect to='/login' />}</Route>
+    <Route
+      {...rest}
+      render={({ location }) =>
+        currentUser ? (
+          children
+        ) : (
+          <Redirect
+            to={{
+              pathname: '/login',
+              state: { from: location },
+            }}
+          />
+        )
+      }
+    />
   );
 };
 export default PrivateRoute;

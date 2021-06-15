@@ -3,7 +3,8 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
 import { SocialIcon } from 'react-social-icons';
-import DatabasePush from './DatabasePush.js';
+
+import DatabaseAdmin from './DatabaseAdmin.js';
 
 const styles = StyleSheet.create({
   footer: {
@@ -11,24 +12,34 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     display: 'flex',
   },
+  socialIcon: {
+    ':hover': {
+      boxShadow: '0 0px 8px 0 #B18AFF',
+      borderRadius: '50%',
+      transition: 'transform 100ms ease-in-out',
+      ':hover': {
+        transform: 'scale(1.1, 1.1)',
+      },
+    },
+  },
 });
 
-const FooterBar = () => {
+const Footer = () => {
   return (
     <div className={css(styles.footer)}>
       <div className='flex-grow-1'>
         <div className='d-flex h-100 px-3 align-items-center text-info'>
-          Michał Tkacz | 2021 <DatabasePush />
+          Michał Tkacz | 2021 <DatabaseAdmin />
         </div>
       </div>
       <div className='p-2'>
         <SocialIcon
-          className='m-1'
+          className={`m-1 ${css(styles.socialIcon)}`}
           url='https://github.com/michaltkacz'
           label='github link'
         />
         <SocialIcon
-          className='m-1'
+          className={`m-1 ${css(styles.socialIcon)}`}
           url='https://www.linkedin.com/in/tkacz-michal/'
           label='linkedin link'
         />
@@ -37,4 +48,4 @@ const FooterBar = () => {
   );
 };
 
-export default FooterBar;
+export default Footer;

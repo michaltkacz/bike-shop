@@ -8,6 +8,9 @@ import img1 from '../../assets/1.jpg';
 import img2 from '../../assets/2.jpg';
 import img3 from '../../assets/3.jpg';
 import img4 from '../../assets/4.jpg';
+import img5 from '../../assets/5.jpg';
+import img6 from '../../assets/6.jpg';
+import img7 from '../../assets/7.jpg';
 
 import Jumbo from './Jumbo';
 
@@ -23,7 +26,7 @@ const HomePage = () => {
       <Row>
         <Col>
           <Jumbo
-            img={img1}
+            img={img6}
             title='Welcome to the Bike-Shop!'
             subtitle='Complete bikes / Custom shop / Sportswear / Tools / Accessories / Parts'
           />
@@ -34,13 +37,13 @@ const HomePage = () => {
           <Jumbo
             img={img1}
             title='Bikes'
-            subtitle='Complete bikes, off-the-shelf'
+            subtitle='Complete ikes, off-the-shelf'
             onClick={() => history.push('/browse')}
           />
         </Col>
         <Col lg={5}>
           <Jumbo
-            img={img2}
+            img={img7}
             title='Sportswear'
             subtitle='For men, women and kids'
             onClick={() => history.push('/browse')}
@@ -50,18 +53,18 @@ const HomePage = () => {
       <Row>
         <Col lg={5}>
           <Jumbo
-            img={img3}
-            title='Parts, tools, accessories'
-            subtitle='Essenstials '
+            img={img6}
+            title='Tools & Parts'
+            subtitle='All the essenstials'
             onClick={() => history.push('/browse')}
           />
         </Col>
         <Col lg={7}>
           <Jumbo
             img={img4}
-            title='Custom shop'
+            title='Custom Shop'
             subtitle='Build your dream machine'
-            onClick={() => history.push('/bike-builder')}
+            onClick={() => history.push('/custom-shop')}
           />
         </Col>
       </Row>

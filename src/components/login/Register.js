@@ -10,7 +10,7 @@ const Register = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
-  const { register } = useAuth();
+  const { register, currentUser } = useAuth();
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const history = useHistory();
@@ -38,7 +38,9 @@ const Register = () => {
     <Card border='primary' className='rounded-0'>
       <Card.Body>
         <h2 className='mb-4'>New user - Sing Up</h2>
-        {error && <Alert variant='danger'>{error}</Alert>}
+        <Alert show={error} variant='danger'>
+          {error}
+        </Alert>
         <Form onSubmit={handleSubmit}>
           <Form.Group id='email'>
             <Form.Label>Email</Form.Label>
@@ -52,7 +54,11 @@ const Register = () => {
             <Form.Label>Password Confirmation</Form.Label>
             <Form.Control type='password' ref={passwordConfirmRef} required />
           </Form.Group>
-          <Button disabled={loading} className='w-100 rounded-0' type='submit'>
+          <Button
+            disabled={loading || currentUser}
+            className='w-100 rounded-0'
+            type='submit'
+          >
             Sign Up
           </Button>
         </Form>

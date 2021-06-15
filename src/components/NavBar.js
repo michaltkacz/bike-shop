@@ -39,14 +39,14 @@ const NavBar = () => {
   const handleLogout = async () => {
     try {
       await logout();
-      history.push('/home');
+      history.push('/login');
     } catch {
       throw new Error('Unknown logout error occured.');
     }
   };
 
   return (
-    <Navbar bg='dark' variant='dark' expand='sm'>
+    <Navbar bg='dark' variant='dark' expand='md'>
       <Navbar.Brand as={Link} to='/home' className='p-0 d-flex'>
         <img
           alt=''
@@ -60,19 +60,30 @@ const NavBar = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='mr-auto'>
+          <Nav.Link as={Link} to='/browse'>
+            Browse
+          </Nav.Link>
+          <Nav.Link as={Link} to='/custom-shop'>
+            <nobr>Custom Shop</nobr>
+          </Nav.Link>
+        </Nav>
         <Nav className='w-100 justify-content-end'>
           {currentUser ? (
             <>
               <NavItem eventkey={1}>
                 <Nav.Link as={Link} to='/cart'>
-                  <IoCartOutline size='1.5rem' />
-                  <span className='text-secondary '>Cart</span>
+                  <IoCartOutline size='1.5rem' className='text-secondary' />
+                  <span className='text-secondary font-weight-bold'>Cart</span>
                 </Nav.Link>
               </NavItem>
               <NavDropdown
                 title={
                   <>
-                    <IoPersonCircleOutline size='1.5rem' />
+                    <IoPersonCircleOutline
+                      size='1.5rem'
+                      className='text-secondary'
+                    />
                     <span className='text-secondary font-weight-bold'>
                       {currentUser?.email}
                     </span>
@@ -87,7 +98,7 @@ const NavBar = () => {
           ) : (
             <NavItem>
               <Nav.Link as={Link} to='/login'>
-                sign in
+                Sing In
               </Nav.Link>
             </NavItem>
           )}
