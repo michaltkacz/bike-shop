@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bike-shop/static/css/main.41a36f22.chunk.css",
-    "main.js": "/bike-shop/static/js/main.89261cc6.chunk.js",
-    "main.js.map": "/bike-shop/static/js/main.89261cc6.chunk.js.map",
+    "main.js": "/bike-shop/static/js/main.a2bfdd5a.chunk.js",
+    "main.js.map": "/bike-shop/static/js/main.a2bfdd5a.chunk.js.map",
     "runtime-main.js": "/bike-shop/static/js/runtime-main.0d2f80cc.js",
     "runtime-main.js.map": "/bike-shop/static/js/runtime-main.0d2f80cc.js.map",
-    "static/js/2.ddc2cdfc.chunk.js": "/bike-shop/static/js/2.ddc2cdfc.chunk.js",
-    "static/js/2.ddc2cdfc.chunk.js.map": "/bike-shop/static/js/2.ddc2cdfc.chunk.js.map",
+    "static/js/2.004d4e3a.chunk.js": "/bike-shop/static/js/2.004d4e3a.chunk.js",
+    "static/js/2.004d4e3a.chunk.js.map": "/bike-shop/static/js/2.004d4e3a.chunk.js.map",
     "index.html": "/bike-shop/index.html",
     "static/css/main.41a36f22.chunk.css.map": "/bike-shop/static/css/main.41a36f22.chunk.css.map",
-    "static/js/2.ddc2cdfc.chunk.js.LICENSE.txt": "/bike-shop/static/js/2.ddc2cdfc.chunk.js.LICENSE.txt",
+    "static/js/2.004d4e3a.chunk.js.LICENSE.txt": "/bike-shop/static/js/2.004d4e3a.chunk.js.LICENSE.txt",
     "static/media/1.e7cc52a1.jpg": "/bike-shop/static/media/1.e7cc52a1.jpg",
     "static/media/4.4eb28422.jpg": "/bike-shop/static/media/4.4eb28422.jpg",
     "static/media/6.71607bf2.jpg": "/bike-shop/static/media/6.71607bf2.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0d2f80cc.js",
-    "static/js/2.ddc2cdfc.chunk.js",
+    "static/js/2.004d4e3a.chunk.js",
     "static/css/main.41a36f22.chunk.css",
-    "static/js/main.89261cc6.chunk.js"
+    "static/js/main.a2bfdd5a.chunk.js"
   ]
 }
