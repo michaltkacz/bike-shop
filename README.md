@@ -1,16 +1,15 @@
-# IT-NDER v3
+# Bike-Shop
 
-> Demo website project for students looking for IT projects teammates.
+> Demo website for a bike shop
 
 ## Table of contents
 
-- [IT-NDER v3](#it-nder-v3)
+- [Bike-Shop](#bike-shop)
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Demo](#demo)
   - [Screenshots](#screenshots)
   - [Technologies](#technologies)
-  - [Setup and run](#setup-and-run)
   - [Features](#features)
   - [Issues](#issues)
   - [Status](#status)
@@ -22,9 +21,7 @@ todo
 
 ## Demo
 
-todo...
-
-<!-- Project is available online on Github Pages [here](https://michaltkacz.github.io/it-nder/). -->
+Project is available online on Github Pages [here](https://michaltkacz.github.io/bike-shop/).
 
 ## Screenshots
 
@@ -41,12 +38,6 @@ todo...
 - [Bootstrap v5.0.0](https://getbootstrap.com/ 'Bootstrap page') front-end toolkit.
 - [react-bootstrap-typeahead v5.1.4](https://github.com/ericgio/react-bootstrap-typeahead 'react-bootstrap-typeahead page') library.
 - [Firebase](https://firebase.google.com/) service as backend for authorization and database. -->
-
-## Setup and run
-
-todo...
-
-<!-- To run it locally, download the repository and run `npm install` in project root folder. Then launch `npm start` to start project on local server. -->
 
 ## Features
 
