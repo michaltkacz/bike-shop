@@ -28,11 +28,11 @@ const App = () => {
         <ScrollToTop />
         <NavBar />
         <Switch>
-          <Route exact path='/home' render={() => <HomePage />} />
-          <Route exact path='/login' render={() => <LoginPage />} />
-          <Route exact path='/browse' render={() => <BrowsePage />} />
-          <Route exact path='/custom-shop' render={() => <CustomShop />} />
-          <PrivateRoute exact path='/cart' children={<CartPage />} />
+          <Route path='/home' render={() => <HomePage />} />
+          <Route path='/login' render={() => <LoginPage />} />
+          <Route path='/browse' render={() => <BrowsePage />} />
+          <Route path='/custom-shop' render={() => <CustomShop />} />
+          <PrivateRoute path='/cart' children={<CartPage />} />
           <Route path='*'>
             <Redirect to='/home' />
           </Route>
