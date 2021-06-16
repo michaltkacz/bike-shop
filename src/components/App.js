@@ -2,7 +2,7 @@ import { React } from 'react';
 
 import {
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Redirect,
 } from 'react-router-dom';
@@ -24,17 +24,17 @@ import ScrollToTop from './utils/ScrollToTop';
 const App = () => {
   return (
     <AuthProvider>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <ScrollToTop />
         <NavBar />
         <Switch>
-          <Route path='/home' render={() => <HomePage />} />
-          <Route path='/login' render={() => <LoginPage />} />
-          <Route path='/browse' render={() => <BrowsePage />} />
-          <Route path='/custom-shop' render={() => <CustomShop />} />
+          <Route exact path='/' render={() => <HomePage />} />
+          <Route exact path='/login' render={() => <LoginPage />} />
+          <Route exact path='/browse' render={() => <BrowsePage />} />
+          <Route exact path='/custom-shop' render={() => <CustomShop />} />
           <PrivateRoute path='/cart' children={<CartPage />} />
           <Route path='*'>
-            <Redirect to='/home' />
+            <Redirect to='/' />
           </Route>
         </Switch>
         <Footer />

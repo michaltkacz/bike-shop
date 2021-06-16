@@ -47,7 +47,7 @@ const NavBar = () => {
 
   return (
     <Navbar bg='dark' variant='dark' expand='md'>
-      <Navbar.Brand as={Link} to='/home' className='p-0 d-flex'>
+      <Navbar.Brand as={Link} to='/' className='p-0 d-flex'>
         <img
           alt=''
           src={icon}

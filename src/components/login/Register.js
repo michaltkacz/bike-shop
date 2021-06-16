@@ -27,7 +27,7 @@ const Register = () => {
       setLoading(true);
       await register(emailRef.current.value, passwordRef.current.value);
       setLoading(false);
-      history.push('/home');
+      history.push('/');
     } catch {
       setError('Failed to create an account');
       setLoading(false);
