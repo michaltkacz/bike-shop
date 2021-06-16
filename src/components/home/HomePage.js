@@ -35,7 +35,7 @@ const HomePage = () => {
           <Jumbo
             img={img1}
             title='Bikes'
-            subtitle='Complete ikes, off-the-shelf'
+            subtitle='Complete bikes, off-the-shelf'
             onClick={() => history.push('/browse?cat=bikes')}
           />
         </Col>
