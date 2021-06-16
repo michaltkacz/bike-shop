@@ -43,7 +43,12 @@ const Login = () => {
           </Form.Group>
           <Form.Group id='password'>
             <Form.Label>Password</Form.Label>
-            <Form.Control type='password' ref={passwordRef} required />
+            <Form.Control
+              type='password'
+              minLength={6}
+              ref={passwordRef}
+              required
+            />
           </Form.Group>
 
           <Button

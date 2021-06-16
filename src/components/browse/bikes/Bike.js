@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import { useHistory } from 'react-router-dom';
-import { database } from '../../../firebase/firebase';
 
 import {
   Card,
@@ -13,9 +12,10 @@ import {
   Alert,
 } from 'react-bootstrap';
 
-import { useAuth } from '../../../contexts/AuthContext';
-
 import { StyleSheet, css } from 'aphrodite';
+
+import { useAuth } from '../../../contexts/AuthContext';
+import { database } from '../../../firebase/firebase';
 const styles = StyleSheet.create({
   expandOnHover: {
     ':hover': {
@@ -154,7 +154,6 @@ const Bike = ({ data }) => {
             </Button>
           </ButtonGroup>
           <Alert
-            transition={true}
             show={inCart}
             variant='secondary'
             className='rounded-0 m-0 text-center'

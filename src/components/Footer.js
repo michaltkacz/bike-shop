@@ -4,6 +4,8 @@ import { StyleSheet, css } from 'aphrodite';
 
 import { SocialIcon } from 'react-social-icons';
 
+import { useAuth } from '../contexts/AuthContext';
+
 import DatabaseAdmin from './DatabaseAdmin.js';
 
 const styles = StyleSheet.create({
@@ -25,11 +27,13 @@ const styles = StyleSheet.create({
 });
 
 const Footer = () => {
+  const { currentUser } = useAuth();
   return (
     <div className={css(styles.footer)}>
       <div className='flex-grow-1'>
         <div className='d-flex h-100 px-3 align-items-center text-info'>
-          Michał Tkacz | 2021 <DatabaseAdmin />
+          Michał Tkacz | 2021{' '}
+          {currentUser?.email === 'admin@admin.com' && <DatabaseAdmin />}
         </div>
       </div>
       <div className='p-2'>

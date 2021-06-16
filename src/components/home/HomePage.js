@@ -5,12 +5,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
 import img1 from '../../assets/1.jpg';
-import img2 from '../../assets/2.jpg';
-import img3 from '../../assets/3.jpg';
 import img4 from '../../assets/4.jpg';
-import img5 from '../../assets/5.jpg';
 import img6 from '../../assets/6.jpg';
-import img7 from '../../assets/7.jpg';
+import img8 from '../../assets/8.jpg';
+import img9 from '../../assets/9.jpg';
 
 import Jumbo from './Jumbo';
 
@@ -26,7 +24,7 @@ const HomePage = () => {
       <Row>
         <Col>
           <Jumbo
-            img={img6}
+            img={img8}
             title='Welcome to the Bike-Shop!'
             subtitle='Complete bikes / Custom shop / Sportswear / Tools / Accessories / Parts'
           />
@@ -38,15 +36,15 @@ const HomePage = () => {
             img={img1}
             title='Bikes'
             subtitle='Complete ikes, off-the-shelf'
-            onClick={() => history.push('/browse')}
+            onClick={() => history.push('/browse?cat=bikes')}
           />
         </Col>
         <Col lg={5}>
           <Jumbo
-            img={img7}
+            img={img9}
             title='Sportswear'
             subtitle='For men, women and kids'
-            onClick={() => history.push('/browse')}
+            onClick={() => history.push('/browse?cat=sportswear')}
           />
         </Col>
       </Row>
@@ -56,7 +54,7 @@ const HomePage = () => {
             img={img6}
             title='Tools & Parts'
             subtitle='All the essenstials'
-            onClick={() => history.push('/browse')}
+            onClick={() => history.push('/browse?cat=tools')}
           />
         </Col>
         <Col lg={7}>

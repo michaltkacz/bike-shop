@@ -25,7 +25,7 @@ const styles = (props) =>
       cursor: 'pointer',
       transition: 'transform 330ms ease-in-out',
       ':hover': {
-        transform: 'scale(1.02, 1.02)',
+        transform: 'scale(1.05, 1.05)',
       },
     },
 

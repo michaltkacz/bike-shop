@@ -24,7 +24,7 @@ import ScrollToTop from './utils/ScrollToTop';
 const App = () => {
   return (
     <AuthProvider>
-      <Router basename='/bike-shop'>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <NavBar />
         <Switch>

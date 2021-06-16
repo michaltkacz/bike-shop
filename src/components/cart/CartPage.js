@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
+
+import { Container, Row, Col, Alert, Button } from 'react-bootstrap';
+
+import { IoCartOutline } from 'react-icons/io5';
+
 import { useAuth } from '../../contexts/AuthContext';
 import { database } from '../../firebase/firebase';
-import { Container, Row, Col, Alert, Button } from 'react-bootstrap';
+
 import Cart from './Cart';
-import { IoCartOutline } from 'react-icons/io5';
+import OrderMessage from './OrderMessage';
 
 const CartPage = () => {
   const [items, setItems] = useState([]);
-  const [showAlert, setShowAlert] = useState(false);
+  const [showOrderMessage, setShowOrderMessage] = useState(false);
   const { currentUser } = useAuth();
 
   const getData = () => {
@@ -41,7 +46,7 @@ const CartPage = () => {
   const checkoutCart = (orderData) => {
     makeOrder(orderData);
     clearCart();
-    setShowAlert(true);
+    setShowOrderMessage(true);
   };
 
   useEffect(() => {
@@ -56,7 +61,7 @@ const CartPage = () => {
             <IoCartOutline />
             Cart
           </p>
-          {showAlert || (
+          {showOrderMessage || (
             <Cart
               items={items}
               onClearCart={clearCart}
@@ -64,23 +69,10 @@ const CartPage = () => {
               onCartCheckout={checkoutCart}
             />
           )}
-          <Alert show={showAlert} variant='info' className='rounded-0 m-0'>
-            <Alert.Heading className='display-4'>
-              Thank you for your purchase!
-            </Alert.Heading>
-            <p>
-              Your order will be sent as soon as possible
-              <hr />
-            </p>
-            <div className='d-flex justify-content-end'>
-              <Button
-                onClick={() => setShowAlert(false)}
-                variant='outline-info'
-              >
-                Close
-              </Button>
-            </div>
-          </Alert>
+          <OrderMessage
+            show={showOrderMessage}
+            onClose={() => setShowOrderMessage(false)}
+          />
         </Col>
       </Row>
     </Container>
