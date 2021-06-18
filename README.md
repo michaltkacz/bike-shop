@@ -32,6 +32,7 @@ Project is available online on Github Pages [here](https://michaltkacz.github.io
 ## Technologies
 
 - HTML / CSS / JS
+- [React 17.0.2](https://reactjs.org/) library.
 - [React Bootstrap v1.5.2](https://react-bootstrap.github.io/) front-end library.
 - [Bootstrap v4.6.0](https://getbootstrap.com/) front-end toolkit.
 - [Firebase](https://firebase.google.com/) service as backend for authorization and database.
