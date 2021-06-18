@@ -25,15 +25,15 @@ Project is available online on Github Pages [here](https://michaltkacz.github.io
 
 ## Screenshots
 
-![scr1](./images/image1.jpg)
-![scr1](./images/image2.jpg)
-![scr1](./images/image3.jpg)
+![](./images/image1.jpg)
+![](./images/image2.jpg)
+![](./images/image3.jpg)
 
 ## Technologies
 
 - HTML / CSS / JS
-- [React Bootstrap v1.5.2](https://react-bootstrap.github.io/ 'React Bootstrap page') front-end library.
-- [Bootstrap v4.6.0](https://getbootstrap.com/ 'Bootstrap page') front-end toolkit.
+- [React Bootstrap v1.5.2](https://react-bootstrap.github.io/) front-end library.
+- [Bootstrap v4.6.0](https://getbootstrap.com/) front-end toolkit.
 - [Firebase](https://firebase.google.com/) service as backend for authorization and database.
 - [Aphrodite](https://github.com/Khan/aphrodite) CSS in JS styling
 - [React Icons](https://react-icons.github.io/react-icons/) icons components
