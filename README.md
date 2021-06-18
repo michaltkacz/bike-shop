@@ -17,7 +17,7 @@
 
 ## General info
 
-todo
+Simple, fully responsive website for a bike shop with basic Firebase backend (authorization and CRUD).
 
 ## Demo
 
@@ -25,31 +25,42 @@ Project is available online on Github Pages [here](https://michaltkacz.github.io
 
 ## Screenshots
 
-todo
-
-<!-- ![Example screenshot1](./images/image1.png) -->
+![scr1](./images/image1.jpg)
+![scr1](./images/image2.jpg)
+![scr1](./images/image3.jpg)
 
 ## Technologies
 
-todo...
-
-<!-- - HTML / CSS / JS
+- HTML / CSS / JS
 - [React Bootstrap v1.5.2](https://react-bootstrap.github.io/ 'React Bootstrap page') front-end library.
-- [Bootstrap v5.0.0](https://getbootstrap.com/ 'Bootstrap page') front-end toolkit.
-- [react-bootstrap-typeahead v5.1.4](https://github.com/ericgio/react-bootstrap-typeahead 'react-bootstrap-typeahead page') library.
-- [Firebase](https://firebase.google.com/) service as backend for authorization and database. -->
+- [Bootstrap v4.6.0](https://getbootstrap.com/ 'Bootstrap page') front-end toolkit.
+- [Firebase](https://firebase.google.com/) service as backend for authorization and database.
+- [Aphrodite](https://github.com/Khan/aphrodite) CSS in JS styling
+- [React Icons](https://react-icons.github.io/react-icons/) icons components
+- [React Social Icons](https://www.npmjs.com/package/react-social-icons) social icons components
 
 ## Features
 
-todo...
+Currently:
+
+- Mobile and desktop friendly
+- Account authorization
+- Browsing shop offer
+- User's shopping cart
+
+Ideas / Todo:
+
+- Add more database entries
+- Implement search filters
+- Implement "custom shop"
 
 ## Issues
 
-todo...
+Some optimalizations and code refactor could me made.
 
 ## Status
 
-todo...
+Project will probably be under further development.
 
 ## Contact
 
